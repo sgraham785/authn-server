@@ -20,6 +20,7 @@ $(EGOS):
 vendor: glide.yaml
 	glide install
 	go install
+	go get github.com/benbjohnson/ego/cmd/ego
 
 # The Linux builder is a Docker container because that's the easiest way to get the toolchain for
 # CGO on a MacOS host.
